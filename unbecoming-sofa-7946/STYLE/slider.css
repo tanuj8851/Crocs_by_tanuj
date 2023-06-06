@@ -1,0 +1,37 @@
+#slider-body {
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    border: 1px solid;
+    display: grid;
+    place-items: center;
+}
+
+#slider {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    gap: 0.4cm;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+#slider>div {
+    height: 200px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#slider img {
+    height: 50%;
+    transition: transform 0.3s ease-in;
+}
+
+#slider img:hover {
+    transform: scale(1.1);
+}
+
+#slider::-webkit-scrollbar {
+    overflow: hidden;
+}

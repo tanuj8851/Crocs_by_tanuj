@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --display-flex:flex;
+        }
+        body{
+            font-family: "Proxima Nova",Arial,sans-serif;
+        }
+        #upper_nav{
+            display:none;
+            /* display: var(--display-flex); */
+            align-items: center;
+            justify-content: center;
+            background-color: #c8e4f4;
+            height: 30px;
+        }
+        #main_nav{
+            border:0px solid red;
+            background-color: #000000;
+            display: var(--display-flex);
+            justify-content: space-around;
+            font-size: 10px;
+            color: white;
+            height: 30px;
+            
+        }
+        #main_nav>div>a{
+            font-size: medium;
+            color:white;
+        }
+        #btn{
+            font-size: 10px;
+            display:var(--display-flex);
+            justify-content: space-between;
+            background-color: white;
+            font-weight: bold;
+        }
+        #btn>div>button{
+            height:100%;
+            font-size:10px;
+            background-color: #000000;
+            color:white;
+        }
+        #btn>div>button:hover{
+            border:none;
+            background-color: rgb(244, 240, 240);
+            color:#000000
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            width:100%;
+            background-color: #000000;
+            position:relative;
+            
+        }
+        .container{
+            /* width: 1170px; */
+            margin:auto;
+            display:flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+            
+            /* position:relative; */
+        }
+        nav>ul{
+            display: flex;
+        }
+        nav>ul>li{
+            padding:30px;
+            list-style: none;
+        }
+        nav>ul>li>a{
+            text-decoration: none;
+            color:rgb(13, 13, 13);
+            border:0px solid;
+            font-weight: bold;
+        }
+        .mega_menu{
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s;
+            width:100%;
+            /* height:300px; */
+            box-shadow: 0px 10px 2px 3px rgb(190, 240, 128);
+            display:flex;
+            justify-content: space-evenly;
+        }
+        li{
+            list-style: none;
+        }
+        .mega_menu>div:nth-child(1){
+            display: flex;
+        }
+        nav>ul>li:hover .mega_menu{
+            opacity: 1;
+            visibility: visible;
+        }
+        .logo{
+            border:1px solid red;
+            /* width: 30%; */
+            height: 100%;
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="upper_nav"></div>
+        <div id="main_nav" >
+            <div style="display: flex;align-items:center"><a href="">Free Shipping on orders $49.99+ and free returns on all orders!</a></div>
+            <div id="btn">
+                <div id="offer" style="margin-right: 2px;"><button>SIGN UP FOR CROCS CLUB & GET 15% OFF!</button></div>
+                <div id="account"><button><span id="name">MY ACCOUNT</span> <span><ion-icon name="person-sharp"></ion-icon></span></button></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <a href="crocs.html"><img src=".../Air.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>                    
+                    <li>
+                        <a href="">WOMEN</a>
+                        <div class="mega_menu">
+                            <div>
+                                <div>
+                                    <ul>
+                                        <li><h5>BY STYLE</h5></li>
+                                        <li><a href="">Clogs</a></li>
+                                        <li><a href="">Boots</a></li>
+                                        <li><a href="">Sandals</a></li>
+                                        <li><a href="">Slides</a></li>
+                                        <li><a href="">Flip-Flops</a></li>
+                                        <li><a href="">Platform and Wedges</a></li>
+                                        <li><a href="">Jibbitz Charms</a></li>
+                                        <li><a href="">Socks</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li><h5>NOW TRANDING</h5></li>
+                                        <li><a href="">Valentine's Day</a></li>
+                                        <li><a href="">Limited Release</a></li>
+                                        <li><a href="">Fuzz Lined</a></li>
+                                        <li><a href="">Shoe & Jibbitz Sets</a></li>
+                                        <li><a href="">Classics</a></li>
+                                        <li><a href="">Tie Dye</a></li>
+                                        <li><a href="">Animal Print</a></li>
+                                        <li><a href="">LiteRide</a></li>
+                                        <li><a href="">SHOP ALL WOMEN'S</a></li>
+                                        <li><a href="">SHOP NEW ARRIVALS</a></li>
+                                        <li><a href="">SHOP UP TO 50% OFF SAlE</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">MEN</a>
+                        <div class="mega_menu"></div>
+                    </li>
+                    <li>
+                        <a href="">KIDS</a>
+                        <div class="mega_menu"></div>
+                    </li>
+                    <li>
+                        <a href="">JIBBITZ CHARMS</a>
+                        <div class="mega_menu"></div>
+                    </li>
+                    <li>
+                        <a href="">CROCS AT WORK</a>
+                        <div class="mega_menu"></div>
+                    </li>
+                    <li>
+                        <a href="">SALE</a>
+                        <div class="mega_menu"></div>
+                    </li>
+                    <li>
+                        <a href="">FEATURED</a>
+                        <div class="mega_menu"></div>
+                    </li>
+                    <li><input type="search" name="" id="srch" placeholder="Search"></li>
+                    <li><a href=""><ion-icon name="heart-outline"></ion-icon></a></li>
+                    <li><a href=""><ion-icon name="cart"></ion-icon></a></li>
+        
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

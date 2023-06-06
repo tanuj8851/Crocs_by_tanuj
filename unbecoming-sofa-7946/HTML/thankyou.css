@@ -1,0 +1,24 @@
+#thankYouMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderPlacedText {
+    font-size: 48px;
+    font-family: "Lato";
+}
+.navflex img{
+width: 30%;
+height: 100px;
+display: block;
+margin: auto;
+}
+.btmfooter{
+    width: 80%;
+    margin: auto;
+    /* justify-content: center;
+    align-items: center; */
+    
+}

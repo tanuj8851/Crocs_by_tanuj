@@ -1,0 +1,49 @@
+.orderSummaryContainer {
+    background-color: #FFF;
+    padding: 20px;
+    font-size: 14px;
+    font-family: "Lato";
+    width: 100%;
+    max-width: 300px;
+    height: fit-content;
+}
+
+.checkoutLeftPart {
+    background-color: #FFF;
+    padding: 20px;
+    font-family: "Lato";
+    width: 100%;
+    max-width: 600px;
+    height: fit-content;
+}
+
+.inputClass{
+    display: grid;
+    row-gap: 5px;
+    margin-bottom: 20px;
+}
+.inputClass > input, .inputClass > select, .inputClass > div > select{
+    height: 40px;
+    padding: 0px 12px;
+}
+
+.sectionHeading {
+    font-family: "Lato";
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.navflex img{
+    width: 20%;
+    height: 100px;
+    display: block;
+    margin: auto;
+
+}
+.btmfooter{
+    width: 80%;
+    margin: auto;
+    /* justify-content: center;
+    align-items: center; */
+    
+}
